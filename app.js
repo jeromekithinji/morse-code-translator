@@ -1,6 +1,13 @@
 import "./translator";
+import {enlgishToMorseCode} from "./translator";
 
-const userInput = document.getElementById('english-text');
-const englishText = userInput.value;
+document.querySelector(".translator__form").addEventListener("submit", (event) => { event.preventDefault();
 
-const submitButton = document.getElementById('submit-button');
+    const englishText = document.querySelector(".translator__input").value;
+
+    const morseCode = enlgishToMorseCode(englishText);
+
+    const outputMorseCode = document.querySelector(".translator__output");
+    outputMorseCode.innerHTML = morseCode;
+
+});

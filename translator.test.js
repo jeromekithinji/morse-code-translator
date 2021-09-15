@@ -28,7 +28,6 @@ test("Should return **** * *-** *-** ---", () => {
     // 2. Act
     // 3. Assert
     const result = enlgishToMorseCode("hello")
-    // const outcome = ".... . .-.. .-.. ---";
     const outcome = "**** * *-** *-** ---";
     expect(result).toBe(outcome);
 });

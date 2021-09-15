@@ -8,13 +8,18 @@
     <title>Morse Code Translator</title>
 </head>
 <body>
-    <div>
-        <label for="english-text">English text:</label>
-        <input type="text" id="english-text" name="english-text"><br>
-        <button id=submit-button>Translate</button>
+    <div class="translator">
+        <h1 class="translator__heading">Morse Code Translator</h1>
+        <form class="translator__form">
+            <label>English: </label>
+            <input class="translator__input" type="text" name="translator__input"><br>
+            <input type="submit" value="Submit" class="translator__submit">
+        </form>
+        <p class="translator__output"></p>
     </div>
 
-    <script src="app.js"></script>
+
+    <script src="app.js" type="module"></script>
     <script src="translator.js"></script>
 </body>
 </html>
