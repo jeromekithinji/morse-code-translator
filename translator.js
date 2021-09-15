@@ -10,22 +10,16 @@ export const enlgishToMorseCode = (englishText) => {
         ["Y", "-*--"], ["Z", "--**"]
     ];
 
-
     return englishText.split("").map((character) => {
-        console.log("the character is: " + character)
-        let translation;
+        let translation = "";
         for (let i = 0; i < directory.length; i++) {
             if (character.toUpperCase() === directory[i][0]) {
-                // let morse = (directory[i][1]).toString();
-                translation += (directory[i][1]).toString();
-                // return translation.concat().toString()
+                translation += directory[i][1];
             }
         }
         return translation;
-    })
+    }).join(" ");
 }
 
 
 // , ["1", ""], ["2", ""], ["3", ""], ["4", ""], ["5", ""], ["6", ""], ["7", ""], ["8", ""], ["9", ""], ["0", ""], [".", ""], [",", ""], [":", ""], ["?", ""], ["-", ""]
-
-
