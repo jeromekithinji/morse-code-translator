@@ -1,6 +1,3 @@
-import { exportAllDeclaration } from "@babel/types";
-import { TestResult } from "@jest/types";
-
 import {enlgishToMorseCode} from "./translator.js";
 
 test("Should return *-", () => {

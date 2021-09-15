@@ -1,5 +1,5 @@
-import "./translator";
-import {enlgishToMorseCode} from "./translator";
+// import "./translator";
+import {enlgishToMorseCode} from "./translator.js";
 
 document.querySelector(".translator__form").addEventListener("submit", (event) => { event.preventDefault();
 
@@ -8,6 +8,6 @@ document.querySelector(".translator__form").addEventListener("submit", (event) =
     const morseCode = enlgishToMorseCode(englishText);
 
     const outputMorseCode = document.querySelector(".translator__output");
-    outputMorseCode.innerHTML = morseCode;
+    outputMorseCode.innerHTML = "Morese code:" + morseCode;
 
 });
