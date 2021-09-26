@@ -8,6 +8,6 @@ document.querySelector(".translator__form").addEventListener("submit", (event) =
     const morseCode = enlgishToMorseCode(englishText);
 
     const outputMorseCode = document.querySelector(".translator__output");
-    outputMorseCode.innerHTML = "Morese code:" + morseCode;
+    outputMorseCode.innerHTML = "Morse code: " + morseCode;
 
 });
